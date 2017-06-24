@@ -1,0 +1,9 @@
+version: '3'
+services:
+  utube2rtmp:
+    build:  .
+    tty: true
+    # container_name: utube2rtmp 
+    volumes:
+      - ./env.sh:/HOME/env.sh
+      - ./process.sh:/HOME/process.sh
